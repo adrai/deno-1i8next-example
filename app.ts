@@ -3,14 +3,16 @@ import Drash from 'https://deno.land/x/drash@v0.39.5/mod.ts';
 class TranslationResource extends Drash.Http.Resource {
   static paths = ['/locales/en/translation.json'];
   public GET() {
-    this.response.body = JSON.stringify({ welcome: 'hello world' });
+    // this.response.body = JSON.stringify({ welcome: 'hello world' });
+    this.response.body = { welcome: 'hello world' };
     return this.response;
   }
 }
 
 const server = new Drash.Http.Server({
   address: 'localhost:1447',
-  response_output: 'text/html',
+  // response_output: 'text/html',
+  response_output: 'application/json',
   resources: [TranslationResource]
 });
 
