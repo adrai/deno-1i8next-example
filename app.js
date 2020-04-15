@@ -21,6 +21,6 @@ i18next.use(HttpBackend).init({
   }
 }, (err, t) => {
   if (err) return console.error(err)
-  console.log(i18next.t('welcome'))
-  console.log(i18next.t('welcome', { lng: 'de' }))
+  console.log(t('welcome'))
+  console.log(t('welcome', { lng: 'de' }))
 })
