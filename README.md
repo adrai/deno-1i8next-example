@@ -1,1 +1,3 @@
-deno --allow-net --allow-env app.ts
+```sh
+deno --allow-net --allow-env --allow-read app.js
+```
