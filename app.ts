@@ -1,4 +1,4 @@
-import Drash from 'https://deno.land/x/drash@v0.39.5/mod.ts';
+import Drash from 'https://deno.land/x/drash/mod.ts';
 
 class TranslationResource extends Drash.Http.Resource {
   static paths = ['/locales/en/translation.json'];
@@ -19,8 +19,7 @@ const server = new Drash.Http.Server({
 server.run();
 
 
-// import i18next from 'https://cdn.jsdelivr.net/gh/i18next/i18next/src/i18next.js'
-import i18next from 'https://cdn.jsdelivr.net/gh/i18next/i18next@v14.1.1/src/i18next.js'
+import i18next from 'https://cdn.jsdelivr.net/gh/i18next/i18next/src/i18next.js'
 import HttpBackend from 'https://cdn.jsdelivr.net/gh/i18next/i18next-http-backend/index.js'
 
 i18next.use(HttpBackend).init({
