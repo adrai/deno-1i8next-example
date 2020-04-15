@@ -19,7 +19,7 @@ const server = new Drash.Http.Server({
 server.run();
 
 
-import i18next from 'https://cdn.jsdelivr.net/gh/i18next/i18next/src/i18next.js'
+import i18next from 'https://cdn.jsdelivr.net/gh/i18next/i18next/src/index.js'
 import HttpBackend from 'https://cdn.jsdelivr.net/gh/i18next/i18next-http-backend/index.js'
 
 i18next.use(HttpBackend).init({
