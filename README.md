@@ -35,7 +35,7 @@ import { Application } from 'https://deno.land/x/abc/mod.ts'
 
 // i18next in action...
 import i18next from 'https://deno.land/x/i18next/index.js'
-import HttpBackend from 'https://cdn.jsdelivr.net/gh/i18next/i18next-http-backend/index.js'
+import HttpBackend from 'https://raw.githubusercontent.com/i18next/i18next-http-backend/master/index.js'
 
 i18next.use(HttpBackend).init({
   lng: 'en',
